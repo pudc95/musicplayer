@@ -1,4 +1,3 @@
-// 简单的音乐播放功能
 let currentTrack = 0;
 const tracks = [
     { name: '曲目 1', artist: '艺术家 1', file: 'track1.mp3' },
