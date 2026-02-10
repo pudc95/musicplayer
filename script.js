@@ -9,7 +9,6 @@ const audio = new Audio();
 const playPauseButton = document.getElementById('playPause');
 const trackName = document.getElementById('track-name');
 const artistName = document.getElementById('artist-name');
-const volumeSlider = document.getElementById('volume');
 const playlistItems = document.querySelectorAll('.track');
 
 function loadTrack(trackIndex) {
@@ -41,10 +40,6 @@ document.getElementById('next').addEventListener('click', () => {
     currentTrack = (currentTrack + 1) % tracks.length;
     loadTrack(currentTrack);
     audio.play();
-});
-
-volumeSlider.addEventListener('input', () => {
-    audio.volume = volumeSlider.value;
 });
 
 // 点击播放列表播放对应曲目
